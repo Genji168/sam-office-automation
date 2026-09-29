@@ -1,0 +1,23 @@
+{
+    "providers": ["php"],
+    "phases": {
+        "setup": {
+            "nixPkgs": [
+                "php82",
+                "php82Extensions.pdo_mysql",
+                "composer",
+                "nodejs_18"
+            ]
+        },
+        "build": {
+            "cmds": [
+                "composer install --no-dev --optimize-autoloader",
+                "npm install",
+                "npm run build"
+            ]
+        }
+    },
+    "start": {
+        "cmd": "php artisan serve --host=0.0.0.0 --port=$PORT"
+    }
+}
