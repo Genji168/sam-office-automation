@@ -1,0 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <title>SAM | Official Automation Store</title>
+    <link rel="icon" type="image/png" href="{{ asset('sam-logo.png') }}">
+
+    <!-- SAM Oval Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+</head>
